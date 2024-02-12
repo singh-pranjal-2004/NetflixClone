@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.main{
+    height: 95vh;
+    background-image: url(assets/images/background-image.jpg);
+    background-position: center -300px;
+    filter: brightness(200%);
+    background-repeat: no-repeat;
+    background-size: max(1200px, 125vw 95vh);
+    /* background-size: 125vw; */
+    position: relative;
+}
+
+.main .box{
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    max-width: 77vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.nav img{
+    width: 148px;
+    color: red;
+    position: relative;
+    z-index: 10; 
+}
+
+.nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.intro{
+    height: calc(100% - 60px);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.intro1{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.intro2{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro3{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.inp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inp>input{
+    font-size: 15px;
+    width: 370px;
+    height: 45px;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.532);
+    opacity: 0.8;
+    padding: 3px 12px;
+    color: white;
+}
+
+.inp button{
+    background-color: red;
+}
+
+.separation{
+    height: 1vh;
+    background-color: rgb(74, 57, 57);
+    /* background-color: yellow; */
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin{
+    height: 32px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.getstarted{
+    
+    height: 56px;
+    width: 210px;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 3px 8px;
+}
+
+.lang{
+    padding: 3px 8px;
+    height: 32px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: black;
+    border: 0.1px solid rgba(255, 255, 255, 0.533);
+}
+
+/* select.noAppearance {
+    -webkit-appearance: none;
+} */
+
+select{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    padding: 0 140px;
+    position: relative;
+}
+
+.content{
+    padding: 10px 70px;
+    width: 40vw;
+}
+
+.heading{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.details{
+    color: white;
+    font-size: 25px;
+    margin-top: 33px;
+}
+
+.first img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.first video{
+    position: absolute;
+    width: 25vw;
+    /* left: 980px; */
+    right: 150px;
+    /* top: 150px; */
+}
+
+.second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    padding: 0 140px;
+    position: relative;
+}
+
+.second img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.second video{
+    position: absolute;
+    width: 18vw;
+    /* left: 1000px; */
+    right: 240px;
+    top: 120px;
+}
+
+.one{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    padding: 0 140px;
+    position: relative;
+}
+
+.one .img1{
+    position: relative;
+    height: 60vh;
+    /* height: 60vh; */
+    /* top: 80px; */
+}
+
+.one .img2{
+    position: absolute;
+    height: 80px;
+    top: 47vh;
+    left: 15vw;
+    z-index: 10;
+}
+
+.boxani{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 45vh;
+    left: 14vw;
+    position: absolute;
+    height: 103px;
+    width: 326px;
+    border-radius: 10px;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.503);
+    z-index: 9;
+    color: white;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+}
+
+.stranger{
+    font-weight: bolder;
+}
+
+.downloading{
+    color: #0071EB;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16vw;
+    position: absolute;
+    height: 7vh;
+    width: 3vw;
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif") center center no-repeat;
+    background-size: 100%;
+    z-index: 12;
+    background-color: black;
+}
+
+.faq{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin: 33px;
+}
+
+.faq-header{
+    font-weight: 900;
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    margin: auto;
+    width: 72vw;
+    padding: 25px 25px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.question:hover{
+    background-color: #414141;
+}
+
+.subscribe{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.ready{
+    font-size: 20px;
+}
+
+.ready-email{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    margin: 100px 0px;
+    color: rgba(255, 255, 255, 0.532);
+}
+
+.questions{
+    margin: 20px 7.4vw;
+    color: rgba(255, 255, 255, 0.532);
+}
+
+.questions a{
+    color: rgba(255, 255, 255, 0.532);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex a{
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.532);
+    width: 20vw;
+}
+
+.down{
+    margin: 20px 7.4vw;
+}
+
+.net{
+    margin: 0px 7.4vw;
+}
